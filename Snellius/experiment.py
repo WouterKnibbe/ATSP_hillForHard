@@ -2,6 +2,23 @@ import algorithm
 import numpy as np
 import json
 import os
+import argparse
+import ast 
+
+# Initialize the parser
+parser = argparse.ArgumentParser(description='Run the experiment with provided parameters.')
+
+# Add arguments
+parser.add_argument('sizes', type=str, help='A list of city sizes, e.g., "[10,12]"')
+parser.add_argument('ranges', type=str, help='A list of value ranges, e.g., "[10,1000]"')
+parser.add_argument('mutations', type=int, help='An integer mutations, e.g., 500')
+
+# Parse arguments
+args = parser.parse_args()
+
+# Convert string representations of lists to actual lists
+sizes = ast.literal_eval(args.sizes)
+ranges = ast.literal_eval(args.ranges)
 
 def custom_encoder(obj):
     """
@@ -83,4 +100,4 @@ def experiment(_cities, _ranges, _mutations):
             # save to json file
             save_partial(range_results, citysize, rang)
 
-experiment([10,12], [10,1000], 500)
+experiment(sizes, ranges, args.mutations)
