@@ -495,16 +495,7 @@ def get_minimal_route(initial_matrix):
 
     except IndexError as e:
         print("Caught an IndexError: ", e)
-        print("zero_indices: ", zero_indices)
-        try:
-            print("Trying to print complex expression: "), 
-            print(zero_indices[0][0]),
-            print(zero_indices[1][0]), 
-            print(zero_indices[0][1]), 
-            print(zero_indices[1][1])
-        except IndexError as e:
-            print("An error occurred while printing the complex expression: ", e)
-        raise  
+        return (-1, np.nan, np.nan)
 
     # if (matrix_child2.count() == 4):
     #   zero_indices = np.where(matrix_child2 == 0)

@@ -4,6 +4,7 @@ import json
 import os
 import argparse
 import ast 
+import time
 
 # Initialize the parser
 parser = argparse.ArgumentParser(description='Run the experiment with provided parameters.')
@@ -40,7 +41,7 @@ def custom_encoder(obj):
         # This will raise a TypeError for unknown types
         raise TypeError(f"Object of type '{obj.__class__.__name__}' is not JSON serializable")
 
-def save_partial(results, citysize, range):
+def save_partial(results, citysize, range, time):
 
     x = 0
     while True:
@@ -53,7 +54,8 @@ def save_partial(results, citysize, range):
     with open(file_path, "w") as json_file:
         json.dump(results, json_file, default=custom_encoder)
 
-    print(f"Results saved to JSON file successfully as {file_path}")
+    print(f"Results saved to JSON file successfully as {file_path}\nElapsed Time: {time:.2f} seconds")
+
 
 def mutate_matrix(_matrix, _upper, _print):
     matrix = _matrix.copy()
@@ -74,6 +76,9 @@ def experiment(_cities, _ranges, _mutations):
         for rang in _ranges:
             range_results = {}
             hardest = 0
+
+            # Record the start time
+            start_time = time.time()
             
             # initialize the matrix with ints, but convert it to a floating-point type to enable np.inf
             matrix = np.random.randint(1,rang,((citysize, citysize))).astype(float)
@@ -96,8 +101,11 @@ def experiment(_cities, _ranges, _mutations):
                     hardest = iterations
                 else:
                     matrix = mutate_matrix(hardest_matrix, rang, False)
-            
-            # save to json file
-            save_partial(range_results, citysize, rang)
+
+                if j > 0 and (j+1) % 100 == 0:
+                    # Calculate elapsed time
+                    elapsed_time = time.time() - start_time
+                    # save to json file
+                    save_partial(range_results, citysize, rang, elapsed_time)
 
 experiment(sizes, ranges, args.mutations)
