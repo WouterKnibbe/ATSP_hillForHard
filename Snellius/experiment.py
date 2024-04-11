@@ -13,7 +13,7 @@ parser = argparse.ArgumentParser(description='Run the experiment with provided p
 parser.add_argument('sizes', type=str, help='A list of city sizes, e.g., "[10,12]"')
 parser.add_argument('ranges', type=str, help='A list of value ranges, e.g., "[10,1000]"')
 parser.add_argument('mutations', type=int, help='An integer mutations, e.g., 500')
-parser.add_argument('continuation', type=str, default="", nargs='?', help='A list of matrix continuations, e.g., "[,(50,10)]". Corresponding matrices must be in "Progress" folder')
+parser.add_argument('continuation', type=str, default="", nargs='?', help='A list of matrix continuations, e.g., "[(7,10),(50,10)]". Corresponding matrices must be in "Progress" folder')
 
 # Parse arguments
 args = parser.parse_args()
@@ -117,10 +117,6 @@ def experiment(_cities, _ranges, _mutations, _continuations):
 
             # Record the start time
             start_time = time.time()
-            
-            print(f"{citysize},{rang}" in _continuations)
-            print(f"{citysize},{rang}")
-            print(_continuations)
 
             if f"{citysize},{rang}" in _continuations:
                 try:
