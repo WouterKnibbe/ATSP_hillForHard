@@ -1,0 +1,114 @@
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: numpy in /gpfs/home3/wknibbe/.local/lib/python3.10/site-packages (1.26.4)
+WARNING: You are using pip version 22.0.4; however, version 24.0 is available.
+You should consider upgrading via the '/sw/arch/RHEL8/EB_production/2022/software/Python/3.10.4-GCCcore-11.3.0/bin/python -m pip install --upgrade pip' command.
+slurmstepd: error: unable to open '/proc/3946439/cgroup' for reading : No such file or directory
+slurmstepd: error: unable to open '/proc/4084800/cgroup' for reading : No such file or directory
+Results saved to JSON file successfully as results30_10_0.json
+Elapsed Time: 244.95 seconds
+Results saved to JSON file successfully as results30_10_1.json
+Elapsed Time: 484.40 seconds
+Results saved to JSON file successfully as results30_10_2.json
+Elapsed Time: 725.50 seconds
+Results saved to JSON file successfully as results30_10_3.json
+Elapsed Time: 961.56 seconds
+Results saved to JSON file successfully as results30_10_4.json
+Elapsed Time: 1200.16 seconds
+Results saved to JSON file successfully as results30_10_5.json
+Elapsed Time: 1450.37 seconds
+Results saved to JSON file successfully as results30_10_6.json
+Elapsed Time: 1697.24 seconds
+Results saved to JSON file successfully as results30_10_7.json
+Elapsed Time: 1952.80 seconds
+Results saved to JSON file successfully as results30_10_8.json
+Elapsed Time: 2212.77 seconds
+Results saved to JSON file successfully as results30_10_9.json
+Elapsed Time: 2466.57 seconds
+Results saved to JSON file successfully as results30_10_10.json
+Elapsed Time: 2724.19 seconds
+Results saved to JSON file successfully as results30_10_11.json
+Elapsed Time: 2980.63 seconds
+Results saved to JSON file successfully as results30_10_12.json
+Elapsed Time: 3238.48 seconds
+Results saved to JSON file successfully as results30_10_13.json
+Elapsed Time: 3504.50 seconds
+Results saved to JSON file successfully as results30_10_14.json
+Elapsed Time: 3764.53 seconds
+slurmstepd: error: unable to open '/proc/1013702/cgroup' for reading : No such file or directory
+Results saved to JSON file successfully as results50_10_0.json
+Elapsed Time: 5770.25 seconds
+Results saved to JSON file successfully as results50_10_1.json
+Elapsed Time: 11831.23 seconds
+Results saved to JSON file successfully as results50_10_2.json
+Elapsed Time: 17746.68 seconds
+Results saved to JSON file successfully as results50_10_3.json
+Elapsed Time: 23451.02 seconds
+Results saved to JSON file successfully as results50_10_4.json
+Elapsed Time: 29466.12 seconds
+Results saved to JSON file successfully as results50_10_5.json
+Elapsed Time: 35544.61 seconds
+Results saved to JSON file successfully as results50_10_6.json
+Elapsed Time: 41482.12 seconds
+Results saved to JSON file successfully as results50_10_7.json
+Elapsed Time: 47478.62 seconds
+Results saved to JSON file successfully as results50_10_8.json
+Elapsed Time: 53357.68 seconds
+Results saved to JSON file successfully as results50_10_9.json
+Elapsed Time: 59427.87 seconds
+Results saved to JSON file successfully as results50_10_10.json
+Elapsed Time: 65319.23 seconds
+Results saved to JSON file successfully as results50_10_11.json
+Elapsed Time: 71242.40 seconds
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 5853711.2 ON tcn287 CANCELLED AT 2024-04-12T13:57:39 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 5853711.7 ON tcn287 CANCELLED AT 2024-04-12T13:57:39 DUE TO TIME LIMIT ***
+slurmstepd: error: *** JOB 5853711 ON tcn287 CANCELLED AT 2024-04-12T13:57:39 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 5853711.3 ON tcn287 CANCELLED AT 2024-04-12T13:57:39 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 5853711.1 ON tcn287 CANCELLED AT 2024-04-12T13:57:39 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 5853711.4 ON tcn287 CANCELLED AT 2024-04-12T13:57:39 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 5853711.6 ON tcn287 CANCELLED AT 2024-04-12T13:57:39 DUE TO TIME LIMIT ***
+slurmstepd: error: container_p_join: open failed for /slurm/5853711/.ns: No such file or directory
+slurmstepd: error: container_g_join(5853711): No such file or directory
+slurmstepd: error: container_p_join: open failed for /slurm/5853711/.ns: No such file or directory
+slurmstepd: error: container_g_join(5853711): No such file or directory
+srun: error: tcn287: task 0: Terminated
+srun: Terminating StepId=5853711.2
+srun: error: tcn287: task 0: Terminated
+srun: Terminating StepId=5853711.7
+slurmstepd: error: container_p_join: open failed for /slurm/5853711/.ns: No such file or directory
+slurmstepd: error: container_g_join(5853711): No such file or directory
+srun: error: tcn287: task 0: Terminated
+srun: Terminating StepId=5853711.3
+slurmstepd: error: container_p_join: open failed for /slurm/5853711/.ns: No such file or directory
+slurmstepd: error: container_g_join(5853711): No such file or directory
+srun: error: tcn287: task 0: Terminated
+srun: Terminating StepId=5853711.1
+slurmstepd: error: container_p_join: open failed for /slurm/5853711/.ns: No such file or directory
+slurmstepd: error: container_g_join(5853711): No such file or directory
+srun: error: tcn287: task 0: Terminated
+srun: Terminating StepId=5853711.4
+slurmstepd: error: container_p_join: open failed for /slurm/5853711/.ns: No such file or directory
+slurmstepd: error: container_g_join(5853711): No such file or directory
+srun: error: tcn287: task 0: Terminated
+srun: Terminating StepId=5853711.6
+slurmstepd: error: container_p_join: open failed for /slurm/5853711/.ns: No such file or directory
+slurmstepd: error: container_g_join(5853711): No such file or directory
+
+JOB STATISTICS
+==============
+Job ID: 5853711
+Cluster: snellius
+User/Group: wknibbe/wknibbe
+State: TIMEOUT (exit code 0)
+Nodes: 1
+Cores per node: 16
+CPU Utilized: 7-07:34:47
+CPU Efficiency: 42.20% of 17-08:02:56 core-walltime
+Job Wall-clock time: 1-02:00:11
+Memory Utilized: 224.67 MB
+Memory Efficiency: 0.78% of 28.00 GB
