@@ -60,7 +60,7 @@ def save_partial(results, citysize, range, time):
     with open(file_path, "w") as json_file:
         json.dump(results, json_file, default=custom_encoder)
 
-    print(f"Results saved to JSON file successfully as {file_path}\nElapsed Time: {time:.2f} seconds")
+    print(f"Results saved to JSON file successfully as {file_path}\nElapsed Time: {time:.2f} seconds", flush=True)
 
 def custom_decoder(obj):
     """
@@ -123,7 +123,7 @@ def experiment(_cities, _ranges, _mutations, _continuations):
                     hardest, matrix = load_result(f"Progress/continue{citysize}_{rang}.json")
                     matrix = np.array(matrix)
                 except Exception as e:
-                    print(f"{e}\n {citysize}_{rang} matrix not loaded, generating random matrix")
+                    print(f"{e}\n {citysize}_{rang} matrix not loaded, generating random matrix", flush=True)
                     # initialize the matrix with ints, but convert it to a floating-point type to enable np.inf
                     matrix = np.random.randint(1,rang,((citysize, citysize))).astype(float)
                     for x in range(citysize):
