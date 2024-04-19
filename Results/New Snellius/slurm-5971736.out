@@ -1,0 +1,208 @@
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: numpy in /gpfs/home3/wknibbe/.local/lib/python3.10/site-packages (1.26.4)
+WARNING: You are using pip version 22.0.4; however, version 24.0 is available.
+You should consider upgrading via the '/sw/arch/RHEL8/EB_production/2022/software/Python/3.10.4-GCCcore-11.3.0/bin/python -m pip install --upgrade pip' command.
+Results saved to JSON file successfully as results30_20_0.json
+Elapsed Time: 51.20 seconds
+Results saved to JSON file successfully as results30_20_1.json
+Elapsed Time: 132.74 seconds
+Results saved to JSON file successfully as results50_20_0.json
+Elapsed Time: 287.62 seconds
+Results saved to JSON file successfully as results30_15_0.json
+Elapsed Time: 442.13 seconds
+Results saved to JSON file successfully as results30_20_2.json
+Elapsed Time: 451.16 seconds
+Results saved to JSON file successfully as results30_30_0.json
+Elapsed Time: 460.29 seconds
+Results saved to JSON file successfully as results50_15_0.json
+Elapsed Time: 705.72 seconds
+Results saved to JSON file successfully as results30_20_3.json
+Elapsed Time: 821.13 seconds
+Results saved to JSON file successfully as results50_20_1.json
+Elapsed Time: 844.43 seconds
+Results saved to JSON file successfully as results30_15_1.json
+Elapsed Time: 1017.53 seconds
+Results saved to JSON file successfully as results30_30_1.json
+Elapsed Time: 1134.11 seconds
+Results saved to JSON file successfully as results30_20_4.json
+Elapsed Time: 1237.63 seconds
+Results saved to JSON file successfully as results50_20_2.json
+Elapsed Time: 1424.22 seconds
+Results saved to JSON file successfully as results50_15_1.json
+Elapsed Time: 1680.86 seconds
+Results saved to JSON file successfully as results30_15_2.json
+Elapsed Time: 1740.25 seconds
+Results saved to JSON file successfully as results30_50_0.json
+Elapsed Time: 1747.31 seconds
+Results saved to JSON file successfully as results30_20_5.json
+Elapsed Time: 1867.23 seconds
+Results saved to JSON file successfully as results50_20_3.json
+Elapsed Time: 2082.46 seconds
+Results saved to JSON file successfully as results30_15_3.json
+Elapsed Time: 2454.31 seconds
+Results saved to JSON file successfully as results50_15_2.json
+Elapsed Time: 2666.17 seconds
+Results saved to JSON file successfully as results50_20_4.json
+Elapsed Time: 2768.03 seconds
+Results saved to JSON file successfully as results30_30_2.json
+Elapsed Time: 2952.01 seconds
+Results saved to JSON file successfully as results30_15_4.json
+Elapsed Time: 3203.73 seconds
+Results saved to JSON file successfully as results50_20_5.json
+Elapsed Time: 3491.58 seconds
+Results saved to JSON file successfully as results30_20_6.json
+Elapsed Time: 3629.99 seconds
+Results saved to JSON file successfully as results50_15_3.json
+Elapsed Time: 3849.99 seconds
+Results saved to JSON file successfully as results30_15_5.json
+Elapsed Time: 3931.85 seconds
+Results saved to JSON file successfully as results50_20_6.json
+Elapsed Time: 4301.28 seconds
+Results saved to JSON file successfully as results30_15_6.json
+Elapsed Time: 4828.57 seconds
+Results saved to JSON file successfully as results50_20_7.json
+Elapsed Time: 5192.59 seconds
+Results saved to JSON file successfully as results30_30_3.json
+Elapsed Time: 5255.91 seconds
+Results saved to JSON file successfully as results50_15_4.json
+Elapsed Time: 5287.50 seconds
+Caught an IndexError:  index 1 is out of bounds for axis 0 with size 1
+Results saved to JSON file successfully as results50_20_8.json
+Elapsed Time: 6406.78 seconds
+Results saved to JSON file successfully as results30_50_1.json
+Elapsed Time: 6488.95 seconds
+Results saved to JSON file successfully as results30_20_7.json
+Elapsed Time: 6588.70 seconds
+Results saved to JSON file successfully as results30_15_7.json
+Elapsed Time: 6700.81 seconds
+Results saved to JSON file successfully as results50_20_9.json
+Elapsed Time: 7670.24 seconds
+Results saved to JSON file successfully as results50_15_5.json
+Elapsed Time: 8620.10 seconds
+Results saved to JSON file successfully as results30_15_8.json
+Elapsed Time: 8716.47 seconds
+Results saved to JSON file successfully as results30_30_4.json
+Elapsed Time: 8837.90 seconds
+Results saved to JSON file successfully as results50_20_10.json
+Elapsed Time: 8957.79 seconds
+Results saved to JSON file successfully as results30_20_8.json
+Elapsed Time: 9896.72 seconds
+Results saved to JSON file successfully as results50_20_11.json
+Elapsed Time: 10211.40 seconds
+Results saved to JSON file successfully as results30_15_9.json
+Elapsed Time: 10904.74 seconds
+Results saved to JSON file successfully as results50_20_12.json
+Elapsed Time: 11449.64 seconds
+Results saved to JSON file successfully as results50_15_6.json
+Elapsed Time: 12235.65 seconds
+Results saved to JSON file successfully as results50_20_13.json
+Elapsed Time: 12728.77 seconds
+Results saved to JSON file successfully as results30_15_10.json
+Elapsed Time: 13127.61 seconds
+Results saved to JSON file successfully as results30_20_9.json
+Elapsed Time: 13249.85 seconds
+Results saved to JSON file successfully as results30_30_5.json
+Elapsed Time: 13637.59 seconds
+Results saved to JSON file successfully as results50_20_14.json
+Elapsed Time: 14007.12 seconds
+Results saved to JSON file successfully as results50_20_15.json
+Elapsed Time: 15227.68 seconds
+Results saved to JSON file successfully as results50_15_7.json
+Elapsed Time: 15588.66 seconds
+Results saved to JSON file successfully as results30_15_11.json
+Elapsed Time: 15649.97 seconds
+Results saved to JSON file successfully as results30_50_2.json
+Elapsed Time: 16373.81 seconds
+Results saved to JSON file successfully as results50_20_16.json
+Elapsed Time: 16504.22 seconds
+Results saved to JSON file successfully as results30_20_10.json
+Elapsed Time: 16875.75 seconds
+Results saved to JSON file successfully as results50_20_17.json
+Elapsed Time: 17860.69 seconds
+Results saved to JSON file successfully as results30_15_12.json
+Elapsed Time: 17950.45 seconds
+Results saved to JSON file successfully as results50_15_8.json
+Elapsed Time: 18990.53 seconds
+Results saved to JSON file successfully as results30_30_6.json
+Elapsed Time: 19323.05 seconds
+Results saved to JSON file successfully as results50_20_18.json
+Elapsed Time: 19350.73 seconds
+Results saved to JSON file successfully as results30_20_11.json
+Elapsed Time: 20430.08 seconds
+Results saved to JSON file successfully as results30_15_13.json
+Elapsed Time: 20562.42 seconds
+Results saved to JSON file successfully as results50_20_19.json
+Elapsed Time: 20976.29 seconds
+Results saved to JSON file successfully as results50_15_9.json
+Elapsed Time: 22527.20 seconds
+Results saved to JSON file successfully as results50_30_0.json
+Elapsed Time: 22535.58 seconds
+Results saved to JSON file successfully as results30_15_14.json
+Elapsed Time: 22990.00 seconds
+Results saved to JSON file successfully as results30_20_12.json
+Elapsed Time: 24115.96 seconds
+Results saved to JSON file successfully as results30_15_15.json
+Elapsed Time: 25310.22 seconds
+Results saved to JSON file successfully as results50_15_10.json
+Elapsed Time: 26115.29 seconds
+Results saved to JSON file successfully as results30_50_3.json
+Elapsed Time: 26546.03 seconds
+Results saved to JSON file successfully as results30_15_16.json
+Elapsed Time: 27755.67 seconds
+Results saved to JSON file successfully as results30_20_13.json
+Elapsed Time: 28446.78 seconds
+Results saved to JSON file successfully as results50_50_0.json
+Elapsed Time: 29624.27 seconds
+Results saved to JSON file successfully as results50_15_11.json
+Elapsed Time: 29764.51 seconds
+Results saved to JSON file successfully as results30_15_17.json
+Elapsed Time: 30272.42 seconds
+slurmstepd: error: unable to open '/proc/2534420/cgroup' for reading : No such file or directory
+Results saved to JSON file successfully as results30_15_18.json
+Elapsed Time: 32508.95 seconds
+Results saved to JSON file successfully as results30_20_14.json
+Elapsed Time: 32807.87 seconds
+Results saved to JSON file successfully as results30_30_7.json
+Elapsed Time: 32829.65 seconds
+Results saved to JSON file successfully as results50_15_12.json
+Elapsed Time: 33474.30 seconds
+Results saved to JSON file successfully as results30_15_19.json
+Elapsed Time: 35064.10 seconds
+Results saved to JSON file successfully as results30_50_4.json
+Elapsed Time: 36700.09 seconds
+Results saved to JSON file successfully as results50_15_13.json
+Elapsed Time: 37258.84 seconds
+Results saved to JSON file successfully as results30_20_15.json
+Elapsed Time: 37498.30 seconds
+Results saved to JSON file successfully as results50_15_14.json
+Elapsed Time: 40973.04 seconds
+Results saved to JSON file successfully as results30_20_16.json
+Elapsed Time: 44158.50 seconds
+Results saved to JSON file successfully as results50_15_15.json
+Elapsed Time: 44726.24 seconds
+Results saved to JSON file successfully as results50_15_16.json
+Elapsed Time: 48385.95 seconds
+Results saved to JSON file successfully as results30_30_8.json
+Elapsed Time: 49176.83 seconds
+Results saved to JSON file successfully as results50_30_1.json
+Elapsed Time: 50168.16 seconds
+Results saved to JSON file successfully as results30_20_17.json
+Elapsed Time: 51026.09 seconds
+Results saved to JSON file successfully as results50_15_17.json
+Elapsed Time: 52118.22 seconds
+Results saved to JSON file successfully as results30_50_5.json
+Elapsed Time: 55560.52 seconds
+Results saved to JSON file successfully as results50_15_18.json
+Elapsed Time: 55800.68 seconds
+Results saved to JSON file successfully as results30_20_18.json
+Elapsed Time: 58004.28 seconds
+Results saved to JSON file successfully as results50_15_19.json
+Elapsed Time: 59532.47 seconds
+Results saved to JSON file successfully as results30_20_19.json
+Elapsed Time: 64971.89 seconds
+Results saved to JSON file successfully as results30_30_9.json
+Elapsed Time: 67441.42 seconds
+Results saved to JSON file successfully as results50_50_1.json
+Elapsed Time: 68019.83 seconds
+Results saved to JSON file successfully as results30_50_6.json
+Elapsed Time: 79696.53 seconds

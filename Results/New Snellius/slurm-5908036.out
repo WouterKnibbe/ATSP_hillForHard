@@ -58,3 +58,27 @@ Results saved to JSON file successfully as results70_10_6.json
 Elapsed Time: 145237.15 seconds
 Results saved to JSON file successfully as results50_1000_1.json
 Elapsed Time: 149497.96 seconds
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 5908036 ON tcn263 CANCELLED AT 2024-04-17T09:16:01 ***
+slurmstepd: error: container_p_join: setns failed for /slurm/5908036/.ns: Invalid argument
+slurmstepd: error: container_g_join(5908036): Invalid argument
+
+JOB STATISTICS
+==============
+Job ID: 5908036
+Cluster: snellius
+User/Group: wknibbe/wknibbe
+State: CANCELLED (exit code 0)
+Nodes: 1
+Cores per node: 16
+CPU Utilized: 13-07:31:02
+CPU Efficiency: 45.99% of 28-22:42:40 core-walltime
+Job Wall-clock time: 1-19:25:10
+Memory Utilized: 1.74 GB
+Memory Efficiency: 6.23% of 28.00 GB

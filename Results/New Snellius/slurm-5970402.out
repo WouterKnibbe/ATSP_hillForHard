@@ -1,0 +1,55 @@
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: numpy in /gpfs/home3/wknibbe/.local/lib/python3.10/site-packages (1.26.4)
+WARNING: You are using pip version 22.0.4; however, version 24.0 is available.
+You should consider upgrading via the '/sw/arch/RHEL8/EB_production/2022/software/Python/3.10.4-GCCcore-11.3.0/bin/python -m pip install --upgrade pip' command.
+Results saved to JSON file successfully as results70_20_0.json
+Elapsed Time: 3053.41 seconds
+Results saved to JSON file successfully as results70_20_1.json
+Elapsed Time: 6087.96 seconds
+Results saved to JSON file successfully as results70_20_2.json
+Elapsed Time: 9289.64 seconds
+slurmstepd: error: unable to open '/proc/1066456/cgroup' for reading : No such file or directory
+Results saved to JSON file successfully as results70_20_3.json
+Elapsed Time: 12566.18 seconds
+Results saved to JSON file successfully as results70_20_4.json
+Elapsed Time: 15818.13 seconds
+Results saved to JSON file successfully as results70_20_5.json
+Elapsed Time: 19118.46 seconds
+Results saved to JSON file successfully as results70_20_6.json
+Elapsed Time: 22388.27 seconds
+Results saved to JSON file successfully as results100_20_0.json
+Elapsed Time: 26810.60 seconds
+Results saved to JSON file successfully as results70_20_7.json
+Elapsed Time: 27152.16 seconds
+Results saved to JSON file successfully as results70_20_8.json
+Elapsed Time: 31995.36 seconds
+Results saved to JSON file successfully as results70_20_9.json
+Elapsed Time: 36957.86 seconds
+Results saved to JSON file successfully as results70_20_10.json
+Elapsed Time: 41872.39 seconds
+srun: error: tcn21: task 0: Out Of Memory
+srun: Terminating StepId=5970402.4
+slurmstepd: error: Detected 1 oom_kill event in StepId=5970402.4. Some of the step tasks have been OOM Killed.
+Results saved to JSON file successfully as results70_20_11.json
+Elapsed Time: 46785.73 seconds
+Results saved to JSON file successfully as results70_20_12.json
+Elapsed Time: 51735.86 seconds
+srun: error: tcn21: task 0: Out Of Memory
+srun: Terminating StepId=5970402.2
+slurmstepd: error: Detected 1 oom_kill event in StepId=5970402.2. Some of the step tasks have been OOM Killed.
+Results saved to JSON file successfully as results70_20_13.json
+Elapsed Time: 56695.90 seconds
+Results saved to JSON file successfully as results70_20_14.json
+Elapsed Time: 61725.74 seconds
+Results saved to JSON file successfully as results100_20_1.json
+Elapsed Time: 63777.86 seconds
+Results saved to JSON file successfully as results70_20_15.json
+Elapsed Time: 66856.67 seconds
+Results saved to JSON file successfully as results70_20_16.json
+Elapsed Time: 71806.54 seconds
+Results saved to JSON file successfully as results70_20_17.json
+Elapsed Time: 76816.68 seconds
+Results saved to JSON file successfully as results70_20_18.json
+Elapsed Time: 81883.26 seconds
+Results saved to JSON file successfully as results70_20_19.json
+Elapsed Time: 87024.33 seconds

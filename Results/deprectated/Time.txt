@@ -1,0 +1,47 @@
+09/04/24 14:38:10 squeue -u $USER
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           5828738      rome experime  wknibbe  R      10:44      1 tcn17
+
+Start at 14:27
+
+Results saved to JSON file successfully as results30_10_0.json
+Elapsed Time: 173.82 seconds
+Results saved to JSON file successfully as results30_10_1.json
+Elapsed Time: 404.58 seconds
+Results saved to JSON file successfully as results30_10_2.json
+Elapsed Time: 648.46 seconds
+Results saved to JSON file successfully as results30_10_3.json
+Elapsed Time: 895.31 seconds
+Results saved to JSON file successfully as results30_10_4.json
+Elapsed Time: 1145.97 seconds
+
+Results saved to JSON file successfully as results30_1000_0.json
+Elapsed Time: 478.89 seconds
+Results saved to JSON file successfully as results30_1000_1.json
+Elapsed Time: 2041.60 seconds
+Results saved to JSON file successfully as results30_1000_2.json
+Elapsed Time: 4324.76 seconds
+Results saved to JSON file successfully as results30_1000_3.json
+Elapsed Time: 6806.61 seconds
+Results saved to JSON file successfully as results30_1000_4.json
+Elapsed Time: 9705.03 seconds
+
+50_10_0 at 16:03
+50_10_1 at 17:41
+50_10_2 at 19:24
+
+50_1000 no results
+
+70_10_0 at 17:12
+
+70_1000 no results
+
+100_10_0 at 18:44
+
+100_1000 no results
+
+Wall at 20:27
+
+Usage:
+wknibbe@home3|GiB:quota=200.00,limit=210.00,usage=0.1196%|Inodes:quota=1000000,limit=1200000,usage=0.1738%
+wknibbe@wstor_scratch1|TiB:quota=8.00,limit=10.00,usage=0.0038%|Inodes:quota=3000000,limit=4000000,usage=0.0015%
