@@ -47,11 +47,14 @@ def custom_encoder(obj):
         # This will raise a TypeError for unknown types
         raise TypeError(f"Object of type '{obj.__class__.__name__}' is not JSON serializable")
 
-def save_partial(results, citysize, range, time):
+def save_partial(results, citysize, range, time, contin):
 
     x = 0
     while True:
-        file_path = f"results{citysize}_{range}_{x}.json"
+        if contin:
+            file_path = f"results{citysize}_{range}_{x}_c.json"
+        else:
+            file_path = f"results{citysize}_{range}_{x}.json"
         if not os.path.exists(file_path):
             break
         x += 1
@@ -157,6 +160,6 @@ def experiment(_cities, _ranges, _mutations, _continuations):
                     # Calculate elapsed time
                     elapsed_time = time.time() - start_time
                     # save to json file
-                    save_partial(range_results, citysize, rang, elapsed_time)
+                    save_partial(range_results, citysize, rang, elapsed_time, f"{citysize},{rang}" in _continuations)
 
 experiment(sizes, ranges, args.mutations, continuations)

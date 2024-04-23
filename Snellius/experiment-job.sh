@@ -1,7 +1,7 @@
 #!/bin/bash
 #Set job requirements
 #SBATCH --nodes=1
-#SBATCH --ntasks=10
+#SBATCH --ntasks=8
 #SBATCH --partition=rome
 #SBATCH --time=48:00:00
  
@@ -11,11 +11,10 @@ module load Python/3.10.4-GCCcore-11.3.0
 pip install numpy
 
 # Define the experiment parameters for each task
-declare -a param1=("[30]" "[30]" "[50]" "[50]" "[70]" "[70]" "[70]" "[100]" "[100]" "[100]")
-declare -a param2=("[100]" "[1000]" "[100]" "[1000]" "[10]" "[100]" "[1000]" "[10]" "[100]" "[1000]")
-declare -a param3=(2000 2000 2000 2000 2000 2000 2000 2000 2000 2000)
-declare -a param4=("[(30,100)]" "[(30,1000)]" "[(50,100)]" "[(50,1000)]" "[(70,10)]" "" "" "[(100,10)]" "" "")
-
+declare -a param1=("[30]" "[30]" "[30]" "[50]" "[50]" "[70]" "[70]" "[70]")
+declare -a param2=("[10]" "[15]" "[20]" "[15]" "[20]" "[15]" "[20]" "[20]")
+declare -a param3=(2000 2000 2000 2000 2000 4000 2000 4000)
+declare -a param4=("[(30,10)]" "[(30,15)]" "[(30,20)]" "[(50,15)]" "[(50,20)]" "" "[(70,20)]" "")
 
 # Execute the program N times, where N=ntasks requested to SLURM. In this example we request all the cores availables on the node.
 # The '&' sign is used to start each program in the background, so that the programs start running concurrently.
