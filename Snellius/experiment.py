@@ -48,22 +48,28 @@ def custom_encoder(obj):
         raise TypeError(f"Object of type '{obj.__class__.__name__}' is not JSON serializable")
 
 def save_partial(results, citysize, range, time, contin):
+    if contin:
+        file_path = f"results{citysize}_{range}_c.json"
+    else:
+        file_path = f"results{citysize}_{range}.json"
 
-    x = 0
-    while True:
-        if contin:
-            file_path = f"results{citysize}_{range}_{x}_c.json"
+    # Determine if this is the first write operation
+    first_entry = not os.path.exists(file_path) or os.path.getsize(file_path) == 0
+
+    with open(file_path, "a") as json_file:
+        if first_entry:
+            # Start of a new JSON file
+            json_file.write('[')
         else:
-            file_path = f"results{citysize}_{range}_{x}.json"
-        if not os.path.exists(file_path):
-            break
-        x += 1
+            # Not the first entry, prepend a comma to separate JSON objects
+            json_file.seek(-1, os.SEEK_END)  # Go to the last character in the file
+            json_file.truncate()             # Remove it (likely a closing bracket `]`)
+            json_file.write(',')             # Properly format with a comma
 
-    # Dumping the nested_dict to a json file with custom encoding
-    with open(file_path, "w") as json_file:
-        json.dump(results, json_file, default=custom_encoder)
-
-    print(f"Results saved to JSON file successfully as {file_path}\nElapsed Time: {time:.2f} seconds", flush=True)
+        # Convert the (time, results) tuple to JSON and append it
+        json_str = json.dumps((time, results), default=custom_encoder)
+        json_file.write(json_str)
+        json_file.write(']')  # Close the JSON array
 
 def custom_decoder(obj):
     """
@@ -148,8 +154,8 @@ def experiment(_cities, _ranges, _mutations, _continuations):
                 range_results[j] = (iterations, hardest, optimal_tour, optimal_cost, matrix)
                 
                 # hillclimb
-                # only considers the current mutation harder if it has MORE iterations
-                if iterations > hardest:
+                # only considers the current mutation harder if it has MORE OR SAME iterations
+                if iterations >= hardest:
                     hardest_matrix = matrix
                     matrix = mutate_matrix(hardest_matrix, rang, False)
                     hardest = iterations
@@ -161,5 +167,9 @@ def experiment(_cities, _ranges, _mutations, _continuations):
                     elapsed_time = time.time() - start_time
                     # save to json file
                     save_partial(range_results, citysize, rang, elapsed_time, f"{citysize},{rang}" in _continuations)
+                    range_results = {}
+    
+    elapsed_time = time.time() - start_time
+    print(f"Done with cities = {citysize}, randMax = {rang}\nElapsed Time: {time:.2f} seconds", flush=True)
 
 experiment(sizes, ranges, args.mutations, continuations)
