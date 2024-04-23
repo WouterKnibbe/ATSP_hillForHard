@@ -48,28 +48,47 @@ def custom_encoder(obj):
         raise TypeError(f"Object of type '{obj.__class__.__name__}' is not JSON serializable")
 
 def save_partial(results, citysize, range, time, contin):
+    base_file_path = f"results{citysize}_{range}"
+    file_extension = ".json"
+    file_index = 0
+    file_path = f"{base_file_path}{file_extension}"
+
+    # Continue mode adds a suffix '_c'
     if contin:
-        file_path = f"results{citysize}_{range}_c.json"
+        file_path = f"{base_file_path}_c{file_extension}"
+
+    # Function to generate new file path with incrementing index
+    def get_new_file_path():
+        nonlocal file_index
+        while True:
+            new_file_path = f"{base_file_path}_{file_index}{file_extension}"
+            if contin:
+                new_file_path = f"{base_file_path}_c_{file_index}{file_extension}"
+            if not os.path.exists(new_file_path):
+                break
+            file_index += 1
+        return new_file_path
+
+    # Check if the file exists and its size
+    if os.path.exists(file_path) and os.path.getsize(file_path) >= 50 * 1024 * 1024:
+        file_path = get_new_file_path()  # Get a new file path if current is too large
+
+    # Check if the file exists to append or create new data structure
+    if os.path.exists(file_path):
+        with open(file_path, "r") as json_file:
+            try:
+                existing_data = json.load(json_file)
+            except json.decoder.JSONDecodeError:
+                existing_data = []
+        existing_data.append((time, results))
+        data_to_write = existing_data
     else:
-        file_path = f"results{citysize}_{range}.json"
+        data_to_write = [(time, results)]
 
-    # Determine if this is the first write operation
-    first_entry = not os.path.exists(file_path) or os.path.getsize(file_path) == 0
+    # Write the data to the file with custom encoding
+    with open(file_path, "w") as json_file:
+        json.dump(data_to_write, json_file, default=custom_encoder)
 
-    with open(file_path, "a") as json_file:
-        if first_entry:
-            # Start of a new JSON file
-            json_file.write('[')
-        else:
-            # Not the first entry, prepend a comma to separate JSON objects
-            json_file.seek(-1, os.SEEK_END)  # Go to the last character in the file
-            json_file.truncate()             # Remove it (likely a closing bracket `]`)
-            json_file.write(',')             # Properly format with a comma
-
-        # Convert the (time, results) tuple to JSON and append it
-        json_str = json.dumps((time, results), default=custom_encoder)
-        json_file.write(json_str)
-        json_file.write(']')  # Close the JSON array
 
 def custom_decoder(obj):
     """
@@ -170,6 +189,6 @@ def experiment(_cities, _ranges, _mutations, _continuations):
                     range_results = {}
     
     elapsed_time = time.time() - start_time
-    print(f"Done with cities = {citysize}, randMax = {rang}\nElapsed Time: {time:.2f} seconds", flush=True)
+    print(f"Done with cities = {citysize}, randMax = {rang}\nElapsed Time: {elapsed_time:.2f} seconds", flush=True)
 
 experiment(sizes, ranges, args.mutations, continuations)
