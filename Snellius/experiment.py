@@ -66,6 +66,8 @@ def save_partial(results, citysize, range, time, contin):
                 new_file_path = f"{base_file_path}_c_{file_index}{file_extension}"
             if not os.path.exists(new_file_path):
                 break
+            elif os.path.getsize(new_file_path) <= 50 * 1024 * 1024:
+                break
             file_index += 1
         return new_file_path
 
