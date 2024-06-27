@@ -50,4 +50,4 @@ The thesis found that hill-climbing ATSP distance matrices can effectively incre
 
 ## References
 
-For a detailed explanation of the methodology and results, please refer to the thesis [Where the Really Hard Problems Actually Are](https://github.com/WouterKnibbe/ATSP_hillForHard).
+For a detailed explanation of the methodology and results, please refer to the thesis Where the Really Hard Problems Actually Are, available on uba.uva.nl.
