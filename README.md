@@ -1,5 +1,5 @@
 # Where the really hard problems actually are
-> *Hill-climbing the Assymmetric Travelling Salesman Problem for hardness*
+> *Hill-Climbing for Hardness on the Asymmetric Traveling Salesman Problem*
 
 This repository contains the code used for the experiments and plots in the thesis "Where the Really Hard Problems Actually Are" by Wouter Knibbe. The thesis investigates the hardness of the Asymmetric Traveling Salesman Problem (ATSP) and how it can be increased through hill-climbing techniques.
 
